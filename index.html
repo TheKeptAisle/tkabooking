@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Book a Consultation | The Kept Aisle</title>
+  <meta name="description" content="Book a consultation with The Kept Aisle. Choose a time that suits you and receive your confirmation straight away.">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E6CX0HV0K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9E6CX0HV0K');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ysuefreyl1");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  /* Layout: two-column booking sheet — invitation-style intro on the left, framed calendar on the right; stacks on phones */
+  :root {
+    --paper: #F2F3EF;
+    --surface: #FBFBF9;
+    --ink: #1E2622;
+    --muted: #5E6862;
+    --line: #D5D9D3;
+    --forest: #2F4A3D;
+    --brass: #9C7B45;
+    --font-display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+    --font-body: "Jost", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #121714; --surface: #1A201C; --ink: #E7EAE5; --muted: #A2ABA5;
+      --line: #2E3631; --forest: #8FB5A0; --brass: #C9A86E; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #121714; --surface: #1A201C; --ink: #E7EAE5; --muted: #A2ABA5;
+    --line: #2E3631; --forest: #8FB5A0; --brass: #C9A86E; color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.65;
+    padding-inline: 20px;
+    padding-block: 0;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-block: clamp(40px, 7vw, 88px) 56px; }
+
+  .masthead {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;
+    padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: clamp(32px, 5vw, 56px);
+  }
+  .wordmark {
+    font-family: var(--font-display); font-size: 1.35rem; font-weight: 400; letter-spacing: 0.04em; margin: 0;
+  }
+  .wordmark em { color: var(--brass); }
+  .eyebrow {
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.22em; color: var(--muted); font-weight: 400;
+  }
+
+  .grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+
+  .intro { min-width: 0; }
+  h1 {
+    font-family: var(--font-display); font-weight: 400; font-size: clamp(2.4rem, 5.2vw, 3.9rem);
+    line-height: 1.05; letter-spacing: -0.01em; margin: 14px 0 22px; text-wrap: balance;
+  }
+  h1 em { font-style: italic; color: var(--forest); }
+  .lede { font-size: 1.08rem; color: var(--muted); max-width: 38ch; margin: 0 0 36px; }
+
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .steps li {
+    display: grid; grid-template-columns: 2.4rem 1fr; gap: 12px; padding-block: 16px; border-bottom: 1px solid var(--line);
+  }
+  .steps .n { font-family: var(--font-display); font-style: italic; color: var(--brass); font-size: 1.25rem; line-height: 1.3; }
+  .steps strong { display: block; font-weight: 500; font-size: 0.95rem; }
+  .steps span.d { color: var(--muted); font-size: 0.92rem; }
+
+  .note { margin-top: 28px; font-size: 0.88rem; color: var(--muted); max-width: 42ch; }
+
+  .panel {
+    min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 4px;
+    padding: clamp(16px, 2.4vw, 28px);
+  }
+  .panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .panel-head h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; margin: 0; }
+  .frame { border-radius: 2px; overflow: hidden; background: #fff; }
+  .frame iframe { display: block; width: 100%; }
+
+  .fallback {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+    margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--muted);
+  }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 500; font-size: 0.82rem; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--paper); background: var(--forest); padding: 12px 20px; border-radius: 2px;
+    transition: opacity .2s ease;
+  }
+  .btn:hover { opacity: 0.88; }
+  .btn:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+
+  footer a { color: inherit; text-decoration-color: var(--brass); text-underline-offset: 2px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="wordmark">The Kept <em>Aisle</em></p>
+    <span class="eyebrow">Bookings</span>
+  </header>
+
+  <main class="grid">
+    <section class="intro">
+      <span class="eyebrow">Book a consultation</span>
+      <h1>Let’s talk about your <em>day</em>.</h1>
+      <p class="lede">Pick a time that suits you and we’ll set aside that slot just for you. Bring your date, your venue and any ideas you’ve been saving.</p>
+
+      <ol class="steps">
+        <li><span class="n">i</span><div><strong>Choose a time</strong><span class="d">Available times show in your local time zone.</span></div></li>
+        <li><span class="n">ii</span><div><strong>Add your details</strong><span class="d">Your name, email and a few words about your plans.</span></div></li>
+        <li><span class="n">iii</span><div><strong>Check your inbox</strong><span class="d">A confirmation and calendar invite arrive straight away.</span></div></li>
+      </ol>
+
+      <p class="note">Need to change your time? Use the link in your confirmation email to reschedule or cancel.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="cal-title">
+      <div class="panel-head">
+        <h2 id="cal-title">Available times</h2>
+        <span class="eyebrow">Google Calendar</span>
+      </div>
+      <div class="frame">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1576Wl2hIjvnQC3xylpIQMUzR5YrKMVZhZkAdwyvBr4btZz56G1gPsgidkaBnSe61lcFY4zCB6?gv=true" style="border: 0" width="100%" height="600" frameborder="0" title="Book an appointment with The Kept Aisle"></iframe>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+      <div class="fallback">
+        <span>Calendar not showing?</span>
+        <a class="btn" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1576Wl2hIjvnQC3xylpIQMUzR5YrKMVZhZkAdwyvBr4btZz56G1gPsgidkaBnSe61lcFY4zCB6?gv=true" target="_blank" rel="noopener">Open booking page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 The Kept Aisle · <a href="terms.html">Prize draw terms &amp; conditions</a></footer>
+</div>
+</body>
+</html>
